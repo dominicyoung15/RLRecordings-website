@@ -773,6 +773,7 @@ const portfolio = [
     artist: "Various Artists",
     role: "Mix & Master",
     bg: "linear-gradient(135deg, #7c2d12, #1c0700)",
+    description: "A raw, hard-hitting Hip-Hop compilation featuring verses from the streets. Mixed and mastered for maximum punch and clarity.",
   },
   {
     image: "/discography/album2.jpg",
@@ -781,6 +782,7 @@ const portfolio = [
     artist: "K. Nova",
     role: "Recording Engineer",
     bg: "linear-gradient(135deg, #92400e, #1c0a00)",
+    description: "Silky smooth R&B grooves recorded and engineered at R&L. Late-night vibes with lush vocal layers and warm production.",
   },
   {
     image: "/discography/album3.jpg",
@@ -789,6 +791,7 @@ const portfolio = [
     artist: "Lenz & The Squad",
     role: "Full Production",
     bg: "linear-gradient(135deg, #7f1d1d, #1c0000)",
+    description: "Full production from the ground up — dark, cinematic Trap with heavy 808s, atmospheric pads, and hard-knocking drums.",
   },
   {
     image: "/discography/album4.jpg",
@@ -797,6 +800,7 @@ const portfolio = [
     artist: "Aria Cole",
     role: "Mastering",
     bg: "linear-gradient(135deg, #78350f, #1c0d00)",
+    description: "Radio-ready Pop mastered to perfection. Warm, bright, and polished — Aria's debut shines front to back.",
   },
   {
     image: "/discography/album5.jpg",
@@ -805,6 +809,7 @@ const portfolio = [
     artist: "Block Archive",
     role: "Production & Engineering",
     bg: "linear-gradient(135deg, #27272a, #000000)",
+    description: "Gritty UK Drill produced and engineered in-house. Sliding 808s, crisp hi-hats, and razor-sharp vocal clarity throughout.",
   },
   {
     image: "/discography/album6.jpg",
@@ -813,6 +818,7 @@ const portfolio = [
     artist: "Maya Ellis",
     role: "Mix & Master",
     bg: "linear-gradient(135deg, #9a3412, #1c0500)",
+    description: "A deeply emotive Soul record mixed and mastered with care. Maya's voice sits front and centre in a rich, organic soundscape.",
   },
 ];
 
@@ -848,72 +854,41 @@ function DiscographySection() {
               variants={cardVariant}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="glass-card rounded-3xl overflow-hidden border border-white/5 hover:border-orange-500/50 group cursor-pointer relative"
+              className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group cursor-pointer"
             >
               {/* Album artwork */}
               <div
-                className="relative h-64 overflow-hidden"
+                className="relative h-56 overflow-hidden"
                 style={{ background: item.bg }}
               >
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                   unoptimized
                 />
 
-                {/* Dark overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent group-hover:from-black/40 transition-all duration-500" />
-
-                {/* Placeholder visual when no image */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-                  <span className="text-6xl opacity-20 mb-2">♫</span>
-                  <span className="text-xs font-black tracking-[0.3em] text-white/20 uppercase">
+                {/* Role badge — bottom right */}
+                <div className="absolute bottom-3 right-3 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-lg"
+                  style={{ background: "rgba(0,0,0,0.55)", backdropFilter: "blur(6px)" }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                  </svg>
+                  <span className="text-[10px] font-semibold text-white/80 uppercase tracking-wide">
                     {item.genre}
-                  </span>
-                </div>
-
-                {/* Genre badge */}
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="text-[10px] font-black tracking-[0.2em] text-white px-3 py-1.5 rounded-full uppercase bg-orange-500/90">
-                    {item.genre}
-                  </span>
-                </div>
-
-                {/* Role badge */}
-                <div className="absolute top-4 right-4 z-10">
-                  <span className="text-[9px] font-bold tracking-wider text-white/80 px-2.5 py-1 rounded-full uppercase border border-white/10"
-                    style={{ background: "rgba(0,0,0,0.6)", backdropFilter: "blur(8px)" }}>
-                    {item.role}
                   </span>
                 </div>
               </div>
 
               {/* Card content */}
-              <div className="p-6">
-                <h3 className="text-lg font-black text-white group-hover:text-orange-400 transition-colors duration-300 mb-1">
-                  {item.title}
+              <div className="p-5">
+                <h3 className="text-base font-bold text-gray-900 mb-1 leading-snug">
+                  {item.artist} — {item.title}
                 </h3>
-                <p className="text-white/50 text-sm mb-5">{item.artist}</p>
-
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" />
-                    <span className="text-xs font-semibold text-white/40 uppercase tracking-wider">
-                      {item.role}
-                    </span>
-                  </div>
-                  <a
-                    href="#contact"
-                    className="text-xs font-black tracking-[0.15em] text-orange-400 hover:text-orange-300 uppercase flex items-center gap-1.5 group/btn transition-colors duration-200"
-                  >
-                    View Project
-                    <span className="group-hover/btn:translate-x-1 transition-transform duration-200 inline-block">
-                      →
-                    </span>
-                  </a>
-                </div>
+                <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">
+                  {item.description}
+                </p>
               </div>
             </motion.div>
           ))}
