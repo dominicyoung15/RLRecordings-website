@@ -500,7 +500,7 @@ function ServicesSection() {
 
 const presets = [
   {
-    name: "Trap Vocal Chain",
+    name: "Lil Baby Vocal Preset",
     genre: "Trap / Hip-Hop",
     description:
       "Punchy, saturated vocal chain built for modern trap. Heavy compression, hi-freq air, tuned delay throws, and the signature transient crack that cuts through any beat.",
