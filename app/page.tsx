@@ -531,6 +531,7 @@ const presets = [
     gradientFrom: "rgba(185,28,28,0.3)",
     gradientTo: "rgba(0,0,0,0)",
     bars: [9, 6, 7, 4, 8, 5, 9, 6, 7, 5, 8, 4, 9, 7, 5],
+    link: "https://nxptune836.beatstars.com/sound-kits/the-rap-vocal-preset-271203",
   },
 ];
 
@@ -618,7 +619,9 @@ function VocalPresetsSection() {
                 <div className="flex items-center justify-between pt-4 border-t border-white/5">
                   <div className="text-3xl font-black text-orange-400">{preset.price}</div>
                   <a
-                    href="#contact"
+                    href={preset.link ?? "#contact"}
+                    target={preset.link ? "_blank" : undefined}
+                    rel={preset.link ? "noopener noreferrer" : undefined}
                     className="px-6 py-3 bg-orange-500 hover:bg-orange-400 text-black font-black text-xs tracking-[0.15em] uppercase rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/30"
                   >
                     Get Preset
