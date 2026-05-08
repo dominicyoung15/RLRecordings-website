@@ -375,7 +375,15 @@ function HeroSection() {
 
 // ─── Services Section ─────────────────────────────────────────────────────────
 
-const services = [
+const services: {
+  number: string;
+  title: string;
+  price: string;
+  icon: string;
+  description: string;
+  features: string[];
+  purchaseUrl?: string;
+}[] = [
   {
     number: "01",
     title: "Mixing Service",
@@ -402,6 +410,7 @@ const services = [
     description:
       "Full album treatment — up to 20 tracks mixed and mastered as a cohesive body of work. Uniform tonality, consistent loudness, and premium vinyl-ready masters.",
     features: ["Up to 20 Tracks", "Cohesive Album Flow", "Vinyl & Digital Ready", "Priority Support"],
+    purchaseUrl: "https://nxptune836.beatstars.com/services/141550",
   },
 ];
 
@@ -474,7 +483,9 @@ function ServicesSection() {
                     <div className="text-3xl font-black text-orange-400">{service.price}</div>
                   </div>
                   <a
-                    href="#contact"
+                    href={service.purchaseUrl ?? "#contact"}
+                    target={service.purchaseUrl ? "_blank" : undefined}
+                    rel={service.purchaseUrl ? "noopener noreferrer" : undefined}
                     className="px-6 py-3 text-orange-400 hover:text-black font-black text-xs tracking-[0.15em] uppercase rounded-full border border-orange-500/30 hover:border-orange-500 transition-all duration-300"
                     style={{ background: "rgba(249,115,22,0.08)" }}
                     onMouseEnter={(e) => {
