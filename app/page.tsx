@@ -392,6 +392,7 @@ const services: {
     description:
       "Professional mix-down for your single or EP. Full stereo balance, EQ sculpting, compression, spatial effects, and stem organization. Delivered in 24 hours.",
     features: ["Stereo Balance & EQ", "Compression & Limiting", "Reverb & Delays", "24hr Delivery"],
+    purchaseUrl: "https://nxptune836.beatstars.com/services/141422",
   },
   {
     number: "02",
