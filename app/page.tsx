@@ -401,6 +401,7 @@ const services: {
     description:
       "Industry-standard mastering for streaming platforms. Loudness optimization, final EQ shaping, stereo widening, and ISRC-ready WAV & MP3 exports.",
     features: ["Loudness Optimization", "Streaming-Ready Export", "Stereo Enhancement", "WAV & MP3 Formats"],
+    purchaseUrl: "https://nxptune836.beatstars.com/services/142398",
   },
   {
     number: "03",
