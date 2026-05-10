@@ -524,7 +524,7 @@ const presets = [
     bars: [4, 7, 5, 9, 6, 8, 5, 7, 4, 6, 8, 5, 7, 9, 6],
   },
   {
-    name: "R&B Smooth Preset",
+    name: "Female R&B Preset",
     genre: "R&B / Soul",
     description:
       "Silky smooth vocal processing inspired by top R&B engineers. Warm saturation, gentle de-essing, lush reverb tail, and transparent compression for emotional depth.",
@@ -533,6 +533,7 @@ const presets = [
     gradientFrom: "rgba(180,83,9,0.3)",
     gradientTo: "rgba(0,0,0,0)",
     bars: [6, 4, 8, 5, 9, 7, 5, 8, 6, 4, 7, 9, 5, 6, 8],
+    link: "https://nxptune836.beatstars.com/sound-kits/female-r-b-vocal-preset-271214",
   },
   {
     name: "Aggressive Rap Preset",
