@@ -786,8 +786,8 @@ const portfolio = [
   {
     image: "/discography/album1.jpg",
     genre: "Hip-Hop",
-    title: "Street Chronicles",
-    artist: "Various Artists",
+    title: "Blend In",
+    artist: "YHR Binga",
     role: "Mix & Master",
     bg: "linear-gradient(135deg, #7c2d12, #1c0700)",
   },
