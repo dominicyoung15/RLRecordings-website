@@ -817,10 +817,10 @@ const portfolio = [
   },
   {
     image: "/discography/album5.jpg",
-    genre: "Drill",
-    title: "100 Shots",
-    artist: "Block Archive",
-    role: "Production & Engineering",
+    genre: "Hip-Hop",
+    title: "The Return Of 2 Young",
+    artist: "2 Young",
+    role: "Mix & Master",
     bg: "linear-gradient(135deg, #27272a, #000000)",
   },
   {
