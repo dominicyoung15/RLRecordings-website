@@ -793,10 +793,10 @@ const portfolio = [
   },
   {
     image: "/discography/album2.jpg",
-    genre: "R&B",
-    title: "Midnight Frequencies",
-    artist: "K. Nova",
-    role: "Recording Engineer",
+    genre: "RAGE",
+    title: "Perfect Timing",
+    artist: "HNR Binga",
+    role: "Mix & Master",
     bg: "linear-gradient(135deg, #92400e, #1c0a00)",
   },
   {
