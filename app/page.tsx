@@ -795,7 +795,7 @@ const portfolio = [
     image: "/discography/album2.jpg",
     genre: "RAGE",
     title: "Perfect Timing",
-    artist: "HNR Binga",
+    artist: "YHR Binga",
     role: "Mix & Master",
     bg: "linear-gradient(135deg, #92400e, #1c0a00)",
   },
