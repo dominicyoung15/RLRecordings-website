@@ -825,9 +825,9 @@ const portfolio = [
   },
   {
     image: "/discography/album6.jpg",
-    genre: "Soul",
-    title: "Deeper Waters",
-    artist: "Maya Ellis",
+    genre: "Trap",
+    title: "Wasted Time",
+    artist: "Blxirs",
     role: "Mix & Master",
     bg: "linear-gradient(135deg, #9a3412, #1c0500)",
   },
