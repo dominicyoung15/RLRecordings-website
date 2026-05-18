@@ -802,9 +802,9 @@ const portfolio = [
   {
     image: "/discography/album3.jpg",
     genre: "Trap",
-    title: "Dark Matter",
-    artist: "Lenz & The Squad",
-    role: "Full Production",
+    title: "Bloom",
+    artist: "Nxptune",
+    role: "Mix & Master",
     bg: "linear-gradient(135deg, #7f1d1d, #1c0000)",
   },
   {
