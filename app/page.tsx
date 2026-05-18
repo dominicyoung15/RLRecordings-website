@@ -809,10 +809,10 @@ const portfolio = [
   },
   {
     image: "/discography/album4.jpg",
-    genre: "Pop",
-    title: "Golden Hour",
-    artist: "Aria Cole",
-    role: "Mastering",
+    genre: "Trap",
+    title: "24 Hours",
+    artist: "Nxptune",
+    role: "Mix & Master",
     bg: "linear-gradient(135deg, #78350f, #1c0d00)",
   },
   {
