@@ -387,7 +387,7 @@ const services: {
   {
     number: "01",
     title: "Mixing Service",
-    price: "$35",
+    price: "$50",
     icon: "🎚",
     description:
       "Professional mix-down for your single or EP. Full stereo balance, EQ sculpting, compression, spatial effects, and stem organization. Delivered in 24 hours.",
