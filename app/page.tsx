@@ -996,13 +996,13 @@ function ContactSection() {
 
             <motion.div variants={fadeUp} className="flex flex-wrap gap-4 justify-center">
               <a
-                href="mailto:contact@rlrecordings.com"
+                href="mailto:nxptuneofficial1@gmail.com"
                 className="px-10 py-5 bg-orange-500 hover:bg-orange-400 text-black font-black text-sm tracking-[0.15em] uppercase rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/40"
               >
                 Book A Session
               </a>
               <a
-                href="mailto:contact@rlrecordings.com"
+                href="mailto:nxptuneofficial1@gmail.com"
                 className="px-10 py-5 text-white font-bold text-sm tracking-[0.15em] uppercase rounded-full border border-white/15 hover:border-orange-500/50 transition-all duration-300 hover:scale-105"
                 style={{ background: "rgba(255,255,255,0.05)" }}
               >
