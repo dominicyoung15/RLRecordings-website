@@ -397,7 +397,7 @@ const services: {
   {
     number: "02",
     title: "Mastering Service",
-    price: "$35",
+    price: "$25",
     icon: "🔊",
     description:
       "Industry-standard mastering for streaming platforms. Loudness optimization, final EQ shaping, stereo widening, and ISRC-ready WAV & MP3 exports.",
