@@ -412,7 +412,7 @@ const services: {
     pricingLabel: "Contact For Pricing",
     icon: "💿",
     description:
-      "Full Album Treatment — Every 5 songs you get one free.",
+      "Full Album Treatment — Every 5 songs you get one free. Industry-Standard Mixing & Mastering. EQ sculpting, Compression, Spatial Effects.",
     features: ["Up to 20 Tracks", "Cohesive Album Flow", "Vinyl & Digital Ready", "Priority Support"],
     purchaseUrl: "https://nxptune836.beatstars.com/services/141550",
   },
@@ -470,7 +470,7 @@ function ServicesSection() {
                 <h3 className="text-2xl font-black text-white mb-2 group-hover:text-orange-400 transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-white/50 text-sm leading-relaxed mb-6">{service.description}</p>
+                <p className="text-white/50 text-sm leading-relaxed mb-6 flex-1">{service.description}</p>
 
                 <ul className="space-y-2 mb-8">
                   {service.features.map((f, j) => (
