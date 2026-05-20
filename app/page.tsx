@@ -515,12 +515,12 @@ function ServicesSection() {
 
 const presets = [
   {
-    name: "Lil Baby Vocal Preset",
-    genre: "Trap / Hip-Hop",
+    name: "Tory Lanez Vocal Preset",
+    genre: "R&B / Rap",
     description:
       "Punchy, saturated vocal chain built for modern trap. Heavy compression, hi-freq air, tuned delay throws, and the signature transient crack that cuts through any beat.",
     price: "$20",
-    daw: "Pro Tools & FL Studio",
+    daw: "All DAW (StudioVerse)",
     gradientFrom: "rgba(154,52,18,0.3)",
     gradientTo: "rgba(0,0,0,0)",
     bars: [4, 7, 5, 9, 6, 8, 5, 7, 4, 6, 8, 5, 7, 9, 6],
