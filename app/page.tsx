@@ -383,6 +383,7 @@ const services: {
   description: string;
   features: string[];
   purchaseUrl?: string;
+  pricingLabel?: string;
 }[] = [
   {
     number: "01",
@@ -407,10 +408,11 @@ const services: {
   {
     number: "03",
     title: "Album Mix & Master",
-    price: "$500",
+    price: "QUOTE",
+    pricingLabel: "Contact For Pricing",
     icon: "💿",
     description:
-      "Full album treatment — up to 20 tracks mixed and mastered as a cohesive body of work. Uniform tonality, consistent loudness, and premium vinyl-ready masters.",
+      "Full Album Treatment — Every 5 songs you get one free.",
     features: ["Up to 20 Tracks", "Cohesive Album Flow", "Vinyl & Digital Ready", "Priority Support"],
     purchaseUrl: "https://nxptune836.beatstars.com/services/141550",
   },
@@ -481,7 +483,7 @@ function ServicesSection() {
 
                 <div className="flex items-center justify-between pt-6 border-t border-white/5">
                   <div>
-                    <div className="text-white/40 text-xs uppercase tracking-widest">Starting at</div>
+                    <div className="text-white/40 text-xs uppercase tracking-widest">{service.pricingLabel ?? "Starting at"}</div>
                     <div className="text-3xl font-black text-orange-400">{service.price}</div>
                   </div>
                   <a
