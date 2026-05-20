@@ -524,6 +524,7 @@ const presets = [
     gradientFrom: "rgba(154,52,18,0.3)",
     gradientTo: "rgba(0,0,0,0)",
     bars: [4, 7, 5, 9, 6, 8, 5, 7, 4, 6, 8, 5, 7, 9, 6],
+    link: "https://www.beatstars.com/nxptune836/sound-kits/271981",
   },
   {
     name: "Female R&B Preset",
