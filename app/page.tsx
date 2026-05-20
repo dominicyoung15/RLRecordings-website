@@ -532,7 +532,7 @@ const presets = [
     description:
       "Silky smooth vocal processing inspired by top R&B engineers. Warm saturation, gentle de-essing, lush reverb tail, and transparent compression for emotional depth.",
     price: "$20",
-    daw: "Pro Tools & Logic",
+    daw: "All DAW (StudioVerse)",
     gradientFrom: "rgba(180,83,9,0.3)",
     gradientTo: "rgba(0,0,0,0)",
     bars: [6, 4, 8, 5, 9, 7, 5, 8, 6, 4, 7, 9, 5, 6, 8],
@@ -544,7 +544,7 @@ const presets = [
     description:
       "Raw, in-your-face vocal chain for drill and aggressive rap. Parallel compression, distorted saturation, tight room reverb, and massive low-end body.",
     price: "$20",
-    daw: "Pro Tools & Ableton",
+    daw: "All DAW (StudioVerse)",
     gradientFrom: "rgba(185,28,28,0.3)",
     gradientTo: "rgba(0,0,0,0)",
     bars: [9, 6, 7, 4, 8, 5, 9, 6, 7, 5, 8, 4, 9, 7, 5],
