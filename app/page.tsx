@@ -451,12 +451,12 @@ function ServicesSection() {
               variants={cardVariant}
               whileHover={{ y: -8, scale: 1.01 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="glass-card rounded-3xl p-8 border border-white/5 hover:border-orange-500/40 group cursor-pointer relative overflow-hidden"
+              className="glass-card rounded-3xl p-8 border border-white/5 hover:border-orange-500/40 group cursor-pointer relative overflow-hidden flex flex-col"
             >
               <div className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{ background: "linear-gradient(135deg, rgba(249,115,22,0.04), rgba(234,88,12,0.08))" }} />
 
-              <div className="relative z-10">
+              <div className="relative z-10 flex flex-col h-full">
                 {/* Faded number */}
                 <span className="absolute -top-2 -right-2 text-[7rem] font-black leading-none select-none pointer-events-none text-white/[0.03] group-hover:text-orange-500/[0.06] transition-colors duration-500">
                   {service.number}
@@ -481,7 +481,7 @@ function ServicesSection() {
                   ))}
                 </ul>
 
-                <div className="flex items-center justify-between pt-6 border-t border-white/5">
+                <div className="flex items-center justify-between pt-6 border-t border-white/5 mt-auto">
                   <div>
                     <div className="text-white/40 text-xs uppercase tracking-widest">{service.pricingLabel ?? "Starting at"}</div>
                     <div className="text-3xl font-black text-orange-400">{service.price}</div>
