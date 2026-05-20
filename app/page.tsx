@@ -668,13 +668,14 @@ const templates = [
   },
   {
     number: "02",
-    title: "Mixing Session Template",
+    title: "Pro Tools Recording Template",
     daw: "Pro Tools",
     description:
       "Pro-grade mixing template with organized stem groups, parallel compression buses, reverb sends, sidechain setups, and metering already in place.",
     price: "$20",
     gradientFrom: "rgba(180,83,9,0.15)",
     tags: ["Pro Tools 2024", "Stem Groups", "Parallel Buses"],
+    link: "https://nxptune836.beatstars.com/sound-kits/pro-tools-recording-template-271983",
   },
   {
     number: "03",
@@ -761,7 +762,9 @@ function TemplatesSection() {
                 <div className="flex items-center justify-between pt-4 border-t border-white/5">
                   <div className="text-3xl font-black text-orange-400">{tpl.price}</div>
                   <a
-                    href="#contact"
+                    href={tpl.link ?? "#contact"}
+                    target={tpl.link ? "_blank" : undefined}
+                    rel={tpl.link ? "noopener noreferrer" : undefined}
                     className="px-6 py-3 text-white hover:text-black font-black text-xs tracking-[0.15em] uppercase rounded-full border border-white/10 hover:border-orange-500 transition-all duration-300"
                     style={{ background: "rgba(255,255,255,0.05)" }}
                     onMouseEnter={(e) => {
