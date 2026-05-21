@@ -679,13 +679,14 @@ const templates = [
   },
   {
     number: "03",
-    title: "Beat Production Template",
-    daw: "Ableton Live",
+    title: "Logic Pro X Recording Template",
+    daw: "Logic Pro X",
     description:
-      "Complete beat production workflow inside Ableton Live. Drum racks, synth racks, MIDI routing, clip launcher, and a mastered signal chain for radio-ready beats.",
+      "Full recording session template built inside FL Studio. Pre-routed vocal chain, beat scaffolding, FX buses, and industry-standard routing ready to record on day one.",
     price: "$20",
     gradientFrom: "rgba(185,28,28,0.15)",
-    tags: ["Ableton 12+", "Drum Racks", "MIDI Routing"],
+    tags: ["Logic Pro X", "Vocal Chain", "Reverbs & Delays"],
+    link: "https://nxptune836.beatstars.com/sound-kits/logic-pro-x-recording-template-272033",
   },
 ];
 
