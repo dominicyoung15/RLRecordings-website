@@ -661,10 +661,11 @@ const templates = [
     title: "FL Studio Recording Template",
     daw: "FL Studio",
     description:
-      "Full recording session template built inside FL Studio. Pre-routed vocal chain, beat scaffolding, FX buses, and industry-standard routing ready to record on day one.",
+      "Full recording session template built inside FL Studio. Pre-routed rec chain, beat scaffolding, FX buses, and industry-standard routing ready to record on day one.",
     price: "$20",
     gradientFrom: "rgba(154,52,18,0.15)",
-    tags: ["FL Studio 21+", "Vocal Chain", "FX Routing"],
+    tags: ["FL Studio 21+", "Rec Chain", "FX Routing"],
+    link: "https://bsta.rs/w5XYY",
   },
   {
     number: "02",
