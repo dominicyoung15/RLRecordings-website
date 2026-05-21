@@ -332,10 +332,10 @@ function HeroSection() {
                 </div>
 
                 {[
-                  { name: "Single Mix & Master", price: "$35", tag: "Most Popular" },
+                  { name: "Single Mix", price: "$50", tag: "Most Popular" },
                   { name: "Vocal Preset Chain", price: "$20", tag: null },
                   { name: "Studio Template", price: "$20", tag: null },
-                  { name: "Album Mix & Master", price: "$500", tag: "Best Value" },
+                  { name: "Album Mix & Master", price: "GET QUOTE", tag: "Best Value" },
                 ].map((item, i) => (
                   <div
                     key={i}
