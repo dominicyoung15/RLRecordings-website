@@ -413,7 +413,7 @@ const services: {
     icon: "💿",
     description:
       "Full Album Treatment — Every 5 songs you get one free. Industry-Standard Mixing & Mastering. EQ sculpting, Compression, Spatial Effects.",
-    features: ["Up to 20 Tracks", "Cohesive Album Flow", "Vinyl & Digital Ready", "Priority Support"],
+    features: ["Up to EPs & Albums", "Cohesive Album Flow", "Vinyl & Digital Ready", "Priority Support"],
     purchaseUrl: "https://nxptune836.beatstars.com/services/141550",
   },
 ];
