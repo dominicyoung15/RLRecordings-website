@@ -212,30 +212,17 @@ function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left — Text Content */}
           <div>
-            <div className="flex flex-wrap items-center gap-3 mb-8">
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-orange-500/30"
-              >
-                <span className="w-2 h-2 rounded-full bg-orange-500 pulse-dot" />
-                <span className="text-xs font-bold tracking-[0.25em] text-orange-400 uppercase">
-                  Premium Audio Engineering
-                </span>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.35 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-orange-500/30"
-              >
-                <span className="text-xs font-bold tracking-[0.25em] text-orange-400 uppercase">
-                  Never be judged by someone with less knowledge than you
-                </span>
-              </motion.div>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-orange-500/30 mb-8"
+            >
+              <span className="w-2 h-2 rounded-full bg-orange-500 pulse-dot" />
+              <span className="text-xs font-bold tracking-[0.25em] text-orange-400 uppercase">
+                Premium Audio Engineering
+              </span>
+            </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
